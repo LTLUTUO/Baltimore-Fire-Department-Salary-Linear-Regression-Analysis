@@ -43,16 +43,17 @@ First, we need to take a look at the data and understand the meaning for each la
 * ANNUAL: Employee's annual salary as noted in their contract
 * GROSS: Employee's actual earned income from Baltimore City government
 Here is a preview of the original data from the website
-![Alt Text]
+![Alt Text](Screen_Shots_for_Step_By_Step_Excel_Manipulation/Original_Data_Labels.png)
 ## Step 1 - Data Cleaning
 ### DESCR Column
 First, I cleaned the DESCR column to remove the department subcategory numbers so that we can filter departments by name only. I used `Flash Fill Function` in Excel 2016 to auto separate the department names.
 To do this, I:
 1. Add a column after DESCR and name it as "Department"
 2. Manually type in the department for the first row
+![Alt Text](Screen_Shots_for_Step_By_Step_Excel_Manipulation/Step_1.1.gif)
 3. Select all the cells in that column
 4. Use short-cut `ctrl + E`
-
+![Alt Text](Screen_Shots_for_Step_By_Step_Excel_Manipulation/Step_1.2.gif)
 ### HIRE_DT Column
 We want to analyze factors comparing with the tenure of employees, so we need to have the data of how long they have been employed in Baltimore City. Since there are only the starting date of the employment, I used `Today()` Formula to achieve the goal.**While the `TODAY()` function counts the days the employee has been employed. I divided it by 365 to get the years of his/her employment**
 1. Insert a new column after the HIRE_DT column and name it time_on_job
