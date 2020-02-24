@@ -44,6 +44,8 @@ First, we need to take a look at the data and understand the meaning for each la
 * GROSS: Employee's actual earned income from Baltimore City government
 Here is a preview of the original data from the website
 ![Alt Text](Screen_Shots_for_Step_By_Step_Excel_Manipulation/Original_Data_Labels.png)
+
+I will demonstrate the steps for making the first chart and analysis below.
 ## Step 1 - Data Cleaning
 ### DESCR Column
 First, I cleaned the DESCR column to remove the department subcategory numbers so that we can filter departments by name only. I used `Flash Fill Function` in Excel 2016 to auto separate the department names.
@@ -68,5 +70,14 @@ For it to be easier when further creating the linear regression model and analyz
 3. Create a new worksheet and copy-paste the information into the new worksheet 
 
 ### Simple Linear Regression
-Now that I have clean up the data, I can create a linear
+Now that I have clean up the data, I can create a linear model to analyze the data.
+1. Select both column of `time_on_jobs` and `Gross`, click on `Insert -> Chart -> Scatter`
+2. Label the X-axis, Y-axis, and chart title so that we remember what is this chart about. Click on the chart, then click on `Chart Design -> Add Chart Element -> Chart Title`. Do the same for X,Y axis.
+3. Add the linear model into the chart. Click on the chart, then click on `Chart Design -> Add Chart Element -> Trendline ->Linear`
+4. Display the equation and R2 for the linear model. Double click on the trendline, then from the **Format Trendline** on the left hand side, click on `Trendline Options -> Display Equation on chart`. Do the same for R2.
 
+### Calculate Errors
+We can calculate the predicted contracted income for employees in the fire department with the linear model we create. Then we can see how many and how much the predicted values deviate from the data. Together with the standard error of residual that I am going to calculate, we can find out/ decide if an employee is a outlier.
+1. Name a new column as Predicted_difference
+2. In the second cell of that column, calculate the predicted value with the formula **time_on_jobs * slope + intercept**
+3. 
