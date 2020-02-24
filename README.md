@@ -32,7 +32,7 @@ To do this, I:
 3. Select all the cells in that column
 4. Use short-cut `ctrl + E`
 
-![alt text](Screen Shots for Step By Step Excel Manipulation/out.gif)
+![alt text](out.gif)
 ### HIRE_DT Column
 We want to analysis factors comparing with the tenure of employees, so we need to have the data of how long they have been employed in Baltimore City. Since there are only the starting date of the employment, I used `Today()` Formula to acheive the goal.
 
