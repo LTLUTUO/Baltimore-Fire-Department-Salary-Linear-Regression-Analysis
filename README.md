@@ -3,8 +3,15 @@
 In China, probably anywhere in the world, the image of firefighters is often related to altrusim and great. Thus, I want concentrate my analysis towards the income of employees in the fire department with open source data from Open Baltimore which contain all the government employees' income in fiscal year 2019.
 
 The analysis focuses on three aspects:
-* What is the linear regression model of employee's income in fire department compares to their tenure.
-* 
+* What is the linear regression model of employee's contractial income in fire department compares to their tenure.
+* What is the linear regression model of employee's actual earning in fire department compared to their tenure.
+* What is the linear regression model of employee's difference in earning in fire department compared to their tenure.
+#### Insight One
+We can see that regarding the question of how the contracted income changes compare to the employment time, the simple linear regression that gives us a result with a R2 value of 49%, which means that this linear model can predict contracted income growth for nearly 50% of employees in the fire department. The standard error of residual is $13684.31, which means that the contracted income for 68% of employees are within $13684.31 from the predicted income.
+![alt text](Baltimore_Fire_Department_Employee's_Contracted_Salary.png)
+#### Insight Two
+We can see that regarding the question of how the actual earning changes compare to the employment time, the simple linear regression that gives us a result with a R2 value of 49%, which means that this linear model can predict contracted income growth for nearly 50% of employees in the fire department. The standard error of residual is $13684.31, which means that the contracted income for 68% of employees are within $13684.31 from the predicted income.
+![alt text](Baltimore_Fire_Department_Employee's_Annual Actual_Earning.png)
 
 ## Outline of Analysis Process
 The original file were exported from the [Open Baltimore Data Base](https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-FY2019/6xv6-e66h), and is available in this repository as a [CSV](Baltimore_City_Employee_Salaries_FY2019.csv) document. The final excel document with the analysis and charts covered is also available in this repository as an [Excel](Baltimore_City_Employee_Salaries_FY2019.xlsx) document.
