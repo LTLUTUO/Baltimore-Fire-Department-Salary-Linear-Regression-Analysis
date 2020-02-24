@@ -78,6 +78,21 @@ Now that I have clean up the data, I can create a linear model to analyze the da
 
 ### Calculate Errors
 We can calculate the predicted contracted income for employees in the fire department with the linear model we create. Then we can see how many and how much the predicted values deviate from the data. Together with the standard error of residual that I am going to calculate, we can find out/ decide if an employee is a outlier.
-1. Name a new column as Predicted_difference
+#### Calculate Predicted Value
+1. Name a new column as **Predicted_difference**
 2. In the second cell of that column, calculate the predicted value with the formula **time_on_jobs * slope + intercept**
-3. 
+3. Ddouble click the bottom-right of that cell to auto fill the predicted value for all the employees
+#### Calculate Error Value
+4. Name another new column as **Difference_Error**
+5. In the second cell of that column, calculate the errors with the formula **ANNUAL_RT - Predicted_difference**
+6. Ddouble click the bottom-right of that cell to auto fill the error value for all the employees
+
+### Standard Error of Residual and Outliers
+While the R2 value is acurate for analyzing how much percentage of the data can be precisely predicted by the linear model, it's usefel to introduce another matric, the standard error of residual. Standard error of residual can help interpreting the distribution of the data. About 68% of the data is within 1 standard error of residual, while about 98% od the data is within 2 standard error of residual. By using this factor, we can decide whether a data is an outlier (whether it is within 2 standard error of residual). Thus we can further analyze what could be the situations for the outliers and if it's reasonable to be included in the model.
+#### Calculate Standard Error of Residual
+1. Name a cell under the chart as **Standard Error of Residual**
+2. In the next cell, calculate the errors with the function formula `=STEYX(ANNUAL_RT:time_on_jobs)`
+#### Find Out the Outlier
+3. Name a new column as **Outliers**
+4. In the second cell of that column, find out outliers with the formula `=IF(ABS(Difference_error)>2*Standard Error of Residual,1,0)` 1 means it's an outlier, 0 represents the opposite.
+
