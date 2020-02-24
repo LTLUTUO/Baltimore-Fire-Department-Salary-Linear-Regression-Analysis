@@ -1,6 +1,10 @@
 # Baltimore-Fire-Department-Salary-Simple-Linear-Regression-Analysis
 ## Overview - Background and Findings
+In China, probably anywhere in the world, the image of firefighters is often related to altrusim and great. Thus, I want concentrate my analysis towards the income of employees in the fire department with open source data from Open Baltimore which contain all the government employees' income in fiscal year 2019.
 
+The analysis focuses on three aspects:
+* What is the linear regression model of employee's income in fire department compares to their tenure.
+* 
 
 ## Outline of Analysis Process
 The original file were exported from the [Open Baltimore Data Base](https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-FY2019/6xv6-e66h), and is available in this repository as a [CSV](Baltimore_City_Employee_Salaries_FY2019.csv) document. The final excel document with the analysis and charts covered is also available in this repository as an [Excel](Baltimore_City_Employee_Salaries_FY2019.xlsx) document.
@@ -21,10 +25,14 @@ Here is a preview of the orignal data from the website
 ![Alt Text]
 ## Step 1 - Data Cleaning
 ### DESCR Column
-First, I cleaned the DESCR column to remove the department subcategory numbers so that we can filter departments by name only. I used Flash Fill Function in Excel 2016 to auto separate the department names.
+First, I cleaned the DESCR column to remove the department subcategory numbers so that we can filter departments by name only. I used `Flash Fill Function` in Excel 2016 to auto separate the department names.
 To do this, I:
 1. Add a column after DESCR and name it as "Department"
 2. Manually type in the department for the first row
 3. Select all the cells in that column
-4. Use short-cut "ctrl + E"
-![Alt Text]
+4. Use short-cut `ctrl + E`
+
+![alt text](Screen Shots for Step By Step Excel Manipulation/out.gif)
+### HIRE_DT Column
+We want to analysis factors comparing with the tenure of employees, so we need to have the data of how long they have been employed in Baltimore City. Since there are only the starting date of the employment, I used `Today()` Formula to acheive the goal.
+
