@@ -7,13 +7,13 @@ The analysis focuses on three aspects:
 * What is the linear regression model of employee's difference in earning in fire department compared to their tenure.
 #### Insight One
 We can see that regarding the question of how the contracted income changes compare to the employment time, the simple linear regression gives us a result with an R2 value of 49%. It means that this linear model can predict contracted income growth for nearly 50% of employees in the fire department. 
-! [alt text](Baltimore_Fire_Department_Employee's_Contracted_Salary.png)
+![alt text](Baltimore_Fire_Department_Employee's_Contracted_Salary.png)
 #### Insight Two
 We can see that regarding the question of how the actual earning changes compare to the employment time, the simple linear regression gives us a result with an R2 value of 41.36%. It means that this linear model can predict actual earnings growth for about 40% of employees in the fire department. The standard error of residual is $21810.27, which means that the contracted income for 68% of employees are within $21810.27 from the predicted income.
-! [alt text](Baltimore_Fire_Department_Employee's_Annual_Actual_Earning.png)
+![alt text](Baltimore_Fire_Department_Employee's_Annual_Actual_Earning.png)
 #### Insight Three
 We can see that regarding the question of how the difference in earning v.s contracted income changes compare to the employment time, the simple linear regression that gives us a result with an R2 value of 9.89%. It means that this linear model can only predict the difference in earning less than 10% of employees in the fire department. However, the standard error of residual for the linear model is just $14804.61, which means that the income difference for 68% of employees are within $14804.61 from the predicted income. Also, we can conclude that the longer an employee stays in the fire department, he/she would have a higher possibility of earning more than the contracted income.
-! [alt text](Baltimore_Fire_Department_Employee's_Income_Difference_from_Contract.png)
+![alt text](Baltimore_Fire_Department_Employee's_Income_Difference_from_Contract.png)
 ## Outline of Analysis Process
 The original file was exported from the [Open Baltimore Data Base](https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-FY2019/6xv6-e66h) and is available in this repository as a [CSV](Baltimore_City_Employee_Salaries_FY2019.csv) document. The final excel document with the analysis and charts covered is also available in this repository as an [Excel](Baltimore_City_Employee_Salaries_FY2019.xlsx) document.
 
